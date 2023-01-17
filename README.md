@@ -1,5 +1,5 @@
 # Foursquare Venue Scraper 2023
-![alt text](images/searching.gif)
+![alt text](images/banner.png)
 
 ## What is it? 
 **Four_Square_Venue_Search.ipynb** is a Jupyter notebook (coded in python) that exhaustively searches a custom geographic area for all venues (e.g. bars, restaurants, businesses etc.) in the area according to the Foursquare Business Directory. 
@@ -8,10 +8,10 @@ It uses the **Place Search** Foursquare API to find all venues in the area and u
 
 ## What’s special about it?
 -  **Exhaustive Search** - other approaches typically fail to find all venues in high density areas because the API only returns a maximum of 50 results. We use a dynamically changing search radius (i.e. smaller search radius for higher density areas) to ensure all venues are found. 
-- **Custom search area** - use latitude and longitude coordinates to define any desired area to search.  
-- **Effectively Free** - A search for all bars and restaurants in London cost about ~$100. Foursquare developer accounts get $200 free credit a month. 
+- **Custom search area** - use latitude and longitude coordinates to define any desired area to search (in the world!).  
+- **Effectively Free** - A search for all bars and restaurants in London costs about ~$100. Foursquare developer accounts get $200 free credit a month. 
+- **Find Specific Venue Types** - Customise the type of venues to search for e.g. all businesses or just bars and restaurants etc. 
 - **Balanced speed against number of API calls** - we made the search as fast as possible whilst making as few API calls as possible.   
-- **Custom Venue Types** - Easily customise the type of venues to find e.g. all businesses or just bars and restaurants etc. 
 - **Tailor Data** - Can customise what extended venue data is collected via a small amount of code tweaking. 
 - **Dynamic Tracker** - Track progress of search via a dynamically updated map of the search area (showing area still to be searched).  
 ![alt text](images/searching.gif)
