@@ -7,18 +7,18 @@
 It uses the **Place Search** Foursquare API to find all venues in the area and uses the **Get Place Details** Foursquare API to get extended data on each venue (e.g. popularity, footfall, rating, price etc.). 
 
 ## What’s special about it?
--  **exhaustive search** - other approaches typically fail to find all venues in high density areas because the API only returns a maximum of 50 results. We use a dynamically changing search radius (i.e. smaller search radius for higher density areas) to ensure all venues are found. 
-- Custom search area - use latitude and longitude coordinates to define any desired area to search.  
-- Effectively Free - A search for all bars and restaurants in London cost about ~$100. Foursquare developer accounts get $200 free credit a month. 
-- Balanced search speed against the number of API calls made -> we made the search as fast as possible whilst making a small number of API calls.   
-- Easily customise the type of venues to find e.g. all businesses or just bars and restaurants etc. 
-- Structured such that a small amount of code tweaking can change what extended venue data is extracted. 
-- Track progress of search via a dynamically updated map of the search area (showing area still to be searched).  
+-  **Exhaustive Search** - other approaches typically fail to find all venues in high density areas because the API only returns a maximum of 50 results. We use a dynamically changing search radius (i.e. smaller search radius for higher density areas) to ensure all venues are found. 
+- **Custom search area** - use latitude and longitude coordinates to define any desired area to search.  
+- **Effectively Free** - A search for all bars and restaurants in London cost about ~$100. Foursquare developer accounts get $200 free credit a month. 
+- **Balanced speed against number of API calls** - we made the search as fast as possible whilst making as few API calls as possible.   
+- **Custom Venue Types** - Easily customise the type of venues to find e.g. all businesses or just bars and restaurants etc. 
+- **Tailor Data** - Can customise what extended venue data is collected via a small amount of code tweaking. 
+- **Dynamic Tracker** - Track progress of search via a dynamically updated map of the search area (showing area still to be searched).  
 ![alt text](images/searching.gif)
-- Easy to retrofit a different API to exhaustively search an area e.g. Google Maps. 
+- **Retrofit Different API** - Easy to retrofit a different API to exhaustively search an area e.g. Google Maps. 
 
 ## How does it work?
-The **Four_Square_Venue_Search.ipynb** notebook contains a detailed explanation on how the venue search is performed and tips for using it. 
+The **Four_Square_Venue_Search.ipynb** notebook contains a detailed explanation on how the venue search works and tips for using it. 
 
 ## How do I set up and perform the Search? 
 Set up API Access: 
