@@ -7,12 +7,13 @@
 It uses the **Place Search** Foursquare API to find all venues in the area and uses the **Get Place Details** Foursquare API to get extended data on each venue (e.g. popularity, footfall, rating, price etc.). 
 
 ## What’s special about it?
--  This is a properly **exhaustive search** - other approaches typically fail to find all venues in high density areas because the API only returns a maximum of 50 results. We use a dynamically changing search radius (i.e. smaller search radius for higher density areas) to ensure all venues are found. 
-- We tried to balance the speed to the search against the number of API calls made i.e. we made the search as fast as possible whilst making a small number of API calls  
-- Easily choose category of results e.,g. Any business or just bars and restaurants
-- Easily update data pulled back by tweaking the venue details function
-- Nice update tracker to track progress (show pic)
-- Easy to retrofit another API call if you wanted to exhaustively search an area using a different API or function e.g. Google Maps
+-  **exhaustive search** - other approaches typically fail to find all venues in high density areas because the API only returns a maximum of 50 results. We use a dynamically changing search radius (i.e. smaller search radius for higher density areas) to ensure all venues are found. 
+- Balanced search speed against the number of API calls made -> we made the search as fast as possible whilst making a small number of API calls.   
+- Easily customise the type of venues to find e.g. all businesses or just bars and restaurants etc. 
+- Structured such that a small amount of code tweaking can change what extended venue data is extracted. 
+- Track progress of search via a dynamically updated map of the search area (showing area still to be searched).  
+![alt text](images/searching.gif)
+- Easy to retrofit a different API to exhaustively search an area with e.g. Google Maps. 
 
 ## How to set up 
 
