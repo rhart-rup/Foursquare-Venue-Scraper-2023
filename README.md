@@ -35,17 +35,25 @@ Perform Custom Search in Jupyter notebook:
 5. Enter your custom search paramaters in the **Perform Venue Search** section. 
 6. Run all cells, the results will be saved to csv.
 
-Output: 
+## Output 
 The output file is a CSV with the following fields:
-	•	id — The Foursquare ID for the venue.
-	•	name — The name of the venue.
-	•	categories — The list of categories of the venue.
-	•	lat — Latitude
-	•	long — Longitude
-	•	num_checkins — Number of Foursquare Checkins
-	•	num_likes — Number of Foursquare Likes
-	•	price — Price Tier between 1-4 (i.e. −  $$$)
-	•	rating — Rating for the venue.
-	•	num_ratings — Number of ratings for the venue.
-	•	url_venue — URL of the venue.
-	•	url_foursquare — URL for the Foursquare venue.
+
+Field|Description
+:---:|:---
+fsq_id|Unique Foursquare ID for venue
+venue_name|Name of venue
+latitude|Laititude Coordinate of venue
+longitude|Longitude Coordinate of venue
+email|contact email address of venue
+tel|contact telephone number of venue
+website|website of venue
+verified|A boolean that indicates whether or not the FSQ Place has been claimed.
+rating|A numerical rating (from 0.0 to 10.0) of the FSQ Place, based on user votes, likes/dislikes, tips sentiment, and visit data. Not all FSQ Places will have a rating.
+popularity|Measure of the FSQ Place's popularity, by foot traffic. This score is on a 0 to 1 scale and uses a 6-month span of POI visits for a given geographic area.
+price|A numerical value (from 1 to 4) that best describes the pricing tier of the FSQ Place, based on known prices for menu items and other offerings. Values include: 1 = Cheap, 2 = Moderate, 3 = Expensive, and 4 = Very Expensive
+date_closed|The recorded date when the FSQ Place was marked as permanently closed in Foursquare's databases. This does not necessarily indicate the POI was actually closed on this date.
+categories|An array, possibly empty, of categories that describe the FSQ Place. Stored as a list of strings. 
+total_ratings|Total number of ratings for venue 
+parent|If the venue is owned by a parent venue, the parent venue's name will be listed 
+parent_fsq_id|If the venue is owned by a parent venue, the parent venue's foursquare ID will be listed 
+neighborhood|Description of the neighborhood the venue is located in e.g. 'Clapham'.
