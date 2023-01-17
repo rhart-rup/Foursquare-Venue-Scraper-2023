@@ -4,18 +4,17 @@
 ## What is it? 
 **Four_Square_Venue_Search.ipynb** is a Jupyter notebook that exhaustively searches a custom geographic area for all venues (e.g. bars, restaurants, businesses etc.) in the area according to the Foursquare Business Directory. 
 
-We use the **Place Search** Foursquare API to find all venues in the area. We use the **Get Place Details** Foursquare API to get extended data on each venue (e.g. popularity, footfall, rating, price etc.). 
+It uses the **Place Search** Foursquare API to find all venues in the area and uses the **Get Place Details** Foursquare API to get extended data on each venue (e.g. popularity, footfall, rating, price etc.). 
 
-What’s special: 
-
--  A properly exhaustive area search with varying radius based on density of search results - unlike other approaches which we have seen that simply generate a grid and have a set radius, this varies radius and goes for exhaustive 
-- Best attempt to balance speed with number of calls I.e. fast but not expensive, smart :) 
+## What’s special about it?
+-  This is a properly **exhaustive search** - other approaches typically fail to find all venues in high density areas because the API only returns a maximum of 50 results. We use a dynamically changing search radius (i.e. smaller search radius for higher density areas) to ensure all venues are found. 
+- We tried to balance the speed to the search against the number of API calls made i.e. we made the search as fast as possible whilst making a small number of API calls  
 - Easily choose category of results e.,g. Any business or just bars and restaurants
 - Easily update data pulled back by tweaking the venue details function
 - Nice update tracker to track progress (show pic)
 - Easy to retrofit another API call if you wanted to exhaustively search an area using a different API or function e.g. Google Maps
 
-How to set up: 
+## How to set up 
 
 Foursquare Account: 
 - Key file + Foursquare Account
